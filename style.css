@@ -1,0 +1,342 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-div {
+    border: 1px solid lightblue;
+    margin: 10px 10px 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#task {
+    height: 60px;
+    font-size: 40px;
+    background-color: white;
+    padding-top: 20px;
+}
+
+#tasks {
+    color: #424242;
+    margin-left: 100px;
+}
+
+#list {
+    color: #00A5EC;
+    margin-right: 2px;
+}
+
+#colordiv {
+    padding-bottom: 100px;
+    background-color: #F7F7F7;
+}
+
+
+
+#fafa-add {
+
+
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    padding: 50px;
+
+}
+
+#fafa-plus {
+    margin-right: 15px;
+}
+
+#fafa-task {
+    margin-right: 60px;
+    margin-top: 10px;
+    color: #424242;
+    font-size: 20px;
+}
+
+/* 3rd page layout start */
+#fafa-back-add {
+
+
+    height: 50px;
+    display: flex;
+    padding: 50px;
+}
+
+#back3 {
+    position: relative;
+    left: 500px;
+
+}
+
+#fafa-plus3 {
+    margin-right: 10px;
+    position: relative;
+    left: 680px;
+}
+
+#fafa-task3 {
+    position: relative;
+    left: 700px;
+    font-size: 20px;
+    color: #424242;
+}
+
+
+
+#add-task3 {
+    position: relative;
+    top: 10px;
+}
+
+
+#card-main {
+    display: flex;
+    margin: 135px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+/* for 3rd page */
+#card-main3 {
+    display: flex;
+    margin: 135px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* for 3rd page end */
+
+.cardbox {
+    border: 0px solid red;
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    margin: 15px;
+    box-shadow: 4px 4px 4px gray, -4px -4px 4px grey;
+    background-color: white;
+
+}
+
+.cardbox:hover {
+    box-shadow: 6px 6px 6px gray, -6px -6px 6px grey;
+}
+
+.box-head {
+    font-size: 21px;
+    margin: 34px;
+    color: #00A5EC
+}
+
+.box-head a {
+    text-decoration: none;
+    color: #00A5EC
+}
+
+.box-head a:hover {
+    text-decoration: none;
+    color: #285f77
+}
+
+.form-box {
+    padding: 30px;
+}
+
+#check {
+    height: 30px;
+    width: 30px;
+}
+        input[type=checkbox] {
+          accent-color:#7B7B7B29;
+        }
+
+.box-text {
+    font-size: 25px;
+    margin-left: 15px;
+    position: relative;
+    bottom: 5px;
+    color: #424242;
+}
+
+.box-cut {
+    font-size: 25px;
+    margin-left: 15px;
+    position: relative;
+    bottom: 5px;
+    color: #6f6f6f;
+    text-decoration: line-through #6f6f6f;
+}
+
+.pageno {
+    color: #777676;
+    position: relative;
+    bottom: 8px;
+}
+
+
+/* for page 2 */
+
+.blur-page {
+    filter: brightness(30%);
+}
+
+#popup {
+    height: 250px;
+    width: 500px;
+    border: 0px solid blue;
+    border-radius: 15px;
+    background-color: white;
+    color: #424242;
+    box-shadow: 4px 4px 4px black, -4px -4px 4px black;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+
+}
+
+#add-cross {
+    height: 60px;
+}
+
+#popup-add {
+    float: left;
+    margin-left: 20px;
+}
+
+#popup-cross {
+    float: right;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+#popup-text {
+    height: 20px;
+    width: 80%;
+    margin-top: 40px;
+}
+
+#popup-button {
+    float: right;
+    border: 0px;
+    height: 25px;
+    width: 100px;
+    margin-top: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #00A5EC;
+
+}
+
+#popup-button:hover {
+    color: whitesmoke;
+    background-color: blueviolet;
+}
+
+
+
+
+/* responsive for mobile */
+
+@media only screen and ( max-width: 768px ) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+    #main-div {
+        width: 100%;
+        margin: 0%;
+    }
+    #task {
+        text-align: center;
+        margin: auto;
+    }
+    #tasks {
+        margin: 0%;
+    }
+    #fafa-task {
+        display: none;
+    }
+    #fafa-plus {
+        transition: 1s;
+        margin: auto;
+    }
+    #card-main {
+        width: 100%;
+        flex-direction: column;
+        margin: 0%;
+    }
+    .cardbox {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+    .popup-width{
+        width: 80%;
+        margin: auto;
+    }
+    /* page 2 */
+    #popup {
+        width: 100%;
+        left: 0%;
+        top: 35%;
+    }
+    /* page3 */
+    #fafa-task3 {display: none;}
+    #fafa-back-add {justify-content: space-around;}
+        #back3 {position: static;}
+        
+        #fafa-plus3 { position: static;}
+}
+
+/* responsive for tab */
+
+@media only screen and ( max-width: 1024px ) and (min-width:769px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+    #main-div {
+        width: 100%;
+        margin: 0%;
+    }
+    #task {
+        text-align: center;
+        margin: auto;
+    }
+    #tasks {
+        margin: 0%;
+    }
+    #fafa-task {
+        display: none;
+    }
+    #fafa-plus {
+        transition: 1s;
+        margin: auto;
+    }
+    #card-main {
+        width: 100%;
+        flex-direction: column;
+        margin: 0%;
+    }
+    .cardbox {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+    /* page 2 */
+        #popup {
+        width: 100%;
+        left: 0%;
+        top: 35%;
+    }
+    /* page3 */
+    #fafa-task3 {display: none;}
+    #fafa-back-add {justify-content: space-around;}
+        #back3 {position: static;}
+        
+        #fafa-plus3 { position: static;}
+}
+Footer
+© 2022 GitHub, Inc.
